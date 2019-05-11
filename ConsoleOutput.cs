@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace proj
 {
-    public class Output
+    public class ConsoleOutput:IOutput
     {
         public void WriteLine(string text)
         {

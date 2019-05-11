@@ -10,15 +10,15 @@ namespace proj
     {
         int first;
         int second;
-        Output output;
+        IOutput output;
 
-        public Expression1(int aa,int bb,Output outt)
+        public Expression1(int aa,int bb,IOutput outt)
         {
             first = aa;
             second = bb;
             output = outt;
         }
-        public Expression1(Output outt)
+        public Expression1(IOutput outt)
         {
             first = 10;
             second = 20;

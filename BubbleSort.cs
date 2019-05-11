@@ -10,13 +10,13 @@ namespace proj
     {
         int length;
         int[] arr;
-        Output output;
-        public BubbleSort(Output outt)
+        IOutput output;
+        public BubbleSort(IOutput outt)
         {
             length = 10;
             output = outt;
         }
-        public BubbleSort(int length,Output outt)
+        public BubbleSort(int length,IOutput outt)
         {
             this.length = length;
             output = outt;
