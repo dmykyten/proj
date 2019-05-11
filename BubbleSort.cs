@@ -10,13 +10,16 @@ namespace proj
     {
         int length;
         int[] arr;
-        public BubbleSort()
+        Output output;
+        public BubbleSort(Output outt)
         {
             length = 10;
+            output = outt;
         }
-        public BubbleSort(int length)
+        public BubbleSort(int length,Output outt)
         {
             this.length = length;
+            output = outt;
         }
         public void Evaluate()
         {
@@ -40,9 +43,9 @@ namespace proj
         {
             for (int i = 0; i < length; i++)
             {
-                Console.Write(arr[i] + " ");
+                output.Write(arr[i] + " ");
             }
-            Console.WriteLine();
+            output.WriteLine("");
         }
 
         private void SortArray()

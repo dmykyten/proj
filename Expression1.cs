@@ -10,20 +10,25 @@ namespace proj
     {
         int first;
         int second;
-        public Expression1(int aa,int bb)
+        Output output;
+
+        public Expression1(int aa,int bb,Output outt)
         {
             first = aa;
             second = bb;
+            output = outt;
         }
-        public Expression1()
+        public Expression1(Output outt)
         {
             first = 10;
             second = 20;
+            output = outt;
         }
         public void Evaluate()
         {
             int c = first * second;
-            Console.WriteLine(c);
+            //Console.WriteLine(c);
+            output.WriteLine(c.ToString());
         }
     }
 }
