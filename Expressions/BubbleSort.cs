@@ -5,22 +5,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace proj
+namespace proj.Expressions
 {
-    class BubbleSort
+    class BubbleSort:AbstractExpression
     {
         int length;
         int[] arr;
-        IOutput output;
-        public BubbleSort(IOutput outt)
+        public BubbleSort(IOutput outt):base(outt)
         {
             length = 10;
-            output = outt;
         }
-        public BubbleSort(int length,IOutput outt)
+        public BubbleSort(int length, IOutput outt):base(outt)
         {
             this.length = length;
-            output = outt;
         }
         public void Evaluate()
         {

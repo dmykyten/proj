@@ -43,10 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BubbleSort.cs" />
+    <Compile Include="Expressions\AbstractExpression.cs" />
+    <Compile Include="Expressions\BubbleSort.cs" />
     <Compile Include="Output\CombinedOutput.cs" />
     <Compile Include="Output\ConsoleOutput.cs" />
-    <Compile Include="Expression1.cs" />
+    <Compile Include="Expressions\Expression1.cs" />
     <Compile Include="Output\FileOutput.cs" />
     <Compile Include="Output\IOutput.cs" />
     <Compile Include="Program.cs" />

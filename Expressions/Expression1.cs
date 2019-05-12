@@ -5,25 +5,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace proj
+namespace proj.Expressions
 {
-    public class Expression1
+    public class Expression1:AbstractExpression
     {
         int first;
         int second;
-        IOutput output;
 
-        public Expression1(int aa,int bb,IOutput outt)
+        public Expression1(int aa, int bb, IOutput outt):base(outt)
         {
             first = aa;
             second = bb;
-            output = outt;
         }
-        public Expression1(IOutput outt)
+        public Expression1(IOutput outt) : base(outt)
         {
             first = 10;
             second = 20;
-            output = outt;
         }
         public void Evaluate()
         {
