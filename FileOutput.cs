@@ -9,19 +9,24 @@ namespace proj
 {
     class FileOutput : IOutput
     {
-        string FilePath;
+        string filePath;
         public FileOutput(string path)
         {
-            FilePath = path;
+            filePath = path;
         }
         public void Write(string text)
         {
-            File.AppendAllText(FilePath, text);
+            File.AppendAllText(filePath, text);
         }
 
         public void WriteLine(string text)
         {
-            File.AppendAllText(FilePath, text + "\r\n");
+            File.AppendAllText(filePath, text + "\r\n");
+        }
+
+        public void DeleteFile()
+        {
+            File.Delete(filePath);
         }
     }
 }

@@ -16,5 +16,10 @@ namespace proj
         {
             Console.Write(text);
         }
+
+        public void Clear()
+        {
+            Console.Clear();
+        }
     }
 }
