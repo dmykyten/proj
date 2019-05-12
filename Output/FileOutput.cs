@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace proj
+namespace proj.Output
 {
     class FileOutput : IOutput
     {

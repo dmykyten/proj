@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace proj
+namespace proj.Output
 {
-    public class ConsoleOutput:IOutput
+    public class ConsoleOutput : IOutput
     {
         public void WriteLine(string text)
         {

@@ -44,10 +44,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BubbleSort.cs" />
-    <Compile Include="ConsoleOutput.cs" />
+    <Compile Include="Output\CombinedOutput.cs" />
+    <Compile Include="Output\ConsoleOutput.cs" />
     <Compile Include="Expression1.cs" />
-    <Compile Include="FileOutput.cs" />
-    <Compile Include="IOutput.cs" />
+    <Compile Include="Output\FileOutput.cs" />
+    <Compile Include="Output\IOutput.cs" />
     <Compile Include="Program.cs" />
   </ItemGroup>
   <ItemGroup>
